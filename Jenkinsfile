@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Abdullah5497/DockerTask'
+                git branch: 'main', url: 'https://github.com/ShroukAllam/docker.git'
             }
         }
 
