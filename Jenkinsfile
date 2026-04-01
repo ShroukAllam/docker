@@ -24,7 +24,7 @@ pipeline {
         stage('Push Image') {
             steps {
                 script {
-                    docker.withRegistry('', 'dockerhub-cred') {
+                    docker.withRegistry('', '1afe43f9-8407-41a1-be77-21286c339050') {
                         docker.image("${IMAGE_NAME}:latest").push()
                     }
                 }
